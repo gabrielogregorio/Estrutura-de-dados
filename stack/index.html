@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="pilha.js"></script>
+  <title>Pilha Exemplo</title>
+</head>
+<body>
+  
+
+  <script>
+    /*
+    Push(element) // Inserir elemento
+Pop() // Remover o item do topo
+Peek() // Retorna o elemento que está no topo
+IsEmpty() // Informa se está vazia
+Clear() // limpa a pilha
+Size() // Informa o tamnho
+Print() // Imprime a pilha
+    
+    */
+let stack = new Stack()
+stack.Push(1)
+stack.Push(2)
+stack.Push(3)
+stack.Push(4)
+stack.Push(5)
+stack.Push('A')
+stack.Print()
+console.log(`Topo: ${stack.Peek()}`)
+console.log(`Size: ${stack.Size()}`)
+console.log(`Empty: ${stack.IsEmpty()}`)
+stack.Pop()
+console.log('------------')
+stack.Clear()
+stack.Print()
+console.log(`Empty: ${stack.IsEmpty()}`)
+
+  </script>
+</body>
+</html>
